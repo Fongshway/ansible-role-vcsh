@@ -1,0 +1,25 @@
+---
+- name: Check vcsh dependencies are present in Arch Linux derivatives
+  pacman:
+    name: "{{ item }}"
+    state: present
+  become: true
+  with_items:
+    - git
+    - make
+    - ruby-ronn
+    - which
+  when: ansible_os_family == 'Archlinux'
+
+- name: Clone vcsh repo
+  git:
+    repo: https://github.com/RichiH/vcsh.git
+    version: master
+    dest: /tmp/vcsh
+
+- name: Install vcsh
+  command: make install
+  become: true
+  args:
+    chdir: /tmp/vcsh
+    creates: /usr/bin/vcsh
