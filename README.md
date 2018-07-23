@@ -3,6 +3,14 @@ Role Name
 
 A brief description of the role goes here.
 
+Build Status
+------------
+
+| Branch        | Status        |
+| ------------- |:-------------:|
+| master        | [![Build Status](https://travis-ci.org/Fongshway/ansible-role-vcsh.svg?branch=master)](https://travis-ci.org/Fongshway/ansible-role-vcsh) |
+| develop       | [![Build Status](https://travis-ci.org/Fongshway/ansible-role-vcsh.svg?branch=develop)](https://travis-ci.org/Fongshway/ansible-role-vcsh) |
+
 Requirements
 ------------
 
