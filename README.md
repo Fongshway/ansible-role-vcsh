@@ -1,4 +1,4 @@
-Role Name
+ansible-role-vcsh
 =========
 
 A brief description of the role goes here.
@@ -42,7 +42,7 @@ passed in as parameters) is always nice for users too:
 
     - hosts: servers
       roles:
-         - { role: vcsh, x: 42 }
+         - { role: ansible-role-vcsh, x: 42 }
 
 License
 -------
