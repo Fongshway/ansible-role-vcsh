@@ -1,7 +1,15 @@
-Role Name
+ansible-role-vcsh
 =========
 
 A brief description of the role goes here.
+
+Build Status
+------------
+
+| Branch        | Status        |
+| ------------- |:-------------:|
+| master        | [![Build Status](https://travis-ci.org/Fongshway/ansible-role-vcsh.svg?branch=master)](https://travis-ci.org/Fongshway/ansible-role-vcsh) |
+| develop       | [![Build Status](https://travis-ci.org/Fongshway/ansible-role-vcsh.svg?branch=develop)](https://travis-ci.org/Fongshway/ansible-role-vcsh) |
 
 Requirements
 ------------
@@ -34,7 +42,7 @@ passed in as parameters) is always nice for users too:
 
     - hosts: servers
       roles:
-         - { role: vcsh, x: 42 }
+         - { role: ansible-role-vcsh, x: 42 }
 
 License
 -------
